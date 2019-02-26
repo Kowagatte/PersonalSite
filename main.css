@@ -5,7 +5,7 @@
 body {
   background: white;
   margin: 0px;
-  margin-top: 100px;
+  margin-top: 130px;
   width: 100%;
   font-family: 'Righteous', cursive;
 }
@@ -37,6 +37,18 @@ header {
   font-size: 22px;
   font-family: 'Righteous', cursive;
   text-decoration: none;
+  vertical-align: middle;
+}
+
+.bar{
+  width: 90%;
+  height: 2px;
+  color: #ccc;
+  background:#ccc;
+}
+
+.right{
+  float: Right;
 }
 
 .navBar{
@@ -47,24 +59,29 @@ header {
   border-bottom: 1px solid #ccc;
   height: 70px;
   z-index: 9;
+  vertical-align: middle;
 }
 
 .navBar ul{
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  height: 100%;
+  width: 100%;
 }
+
 .navBar li{
   display: inline-block;
-  vertical-align: middle;
+  padding-top: 20px;
 }
+
 .navBar li + li{
   margin-left: 10px;
 }
 
 div.navBar{
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
   background: #f8f8f8;
   white-space: normal;
 }
@@ -123,10 +140,12 @@ a.reader{
   position:relative;
   background-color: #f8f8f8;
 }
+
 .blog img{
   width: 100%;
   height: 100%;
 }
+
 .blog a{
   position:absolute;
   bottom:0;
@@ -143,20 +162,30 @@ a.reader{
   display: table;
   margin: auto;
 }
+
 .oldBlogs li{
   float: left;
   display: block;
 }
+
 .oldBlogs .blog{
   width: 400px;
   height: 300px;
   margin-left:  30px;
 }
+
 h1{
+  color: #777777;
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+h2{
   font-size: 20px;
   color: #777777;
 }
-h1:hover{
+
+h2:hover{
   color: #ccc;
   cursor: pointer;
 }
