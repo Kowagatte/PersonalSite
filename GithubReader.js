@@ -1,5 +1,5 @@
 
-let url = "https://api.github.com/repos/Kowagatte/TDServer/commits";
+let url = "https://api.github.com/repos/Kowagatte/Damocles/commits";
 
 let json = JSON.parse(httpGet(url));
 var s= document.getElementById("githubcommits");
