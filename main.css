@@ -58,7 +58,7 @@ header {
   position: fixed;
   border-bottom: 1px solid #ccc;
   height: 70px;
-  z-index: 9;
+  z-index: 4;
   vertical-align: middle;
 }
 
@@ -77,11 +77,11 @@ header {
 
 .navBar li + li{
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 div.navBar{
-  margin: 0px;
-  padding: 0px;
+  padding-left: 10px;
   background: #f8f8f8;
   white-space: normal;
 }
@@ -132,7 +132,7 @@ a.reader{
   overflow-y:scroll;
 }
 
-.blog{
+.frontBlog{
   width: 600px;
   height: 300px;
   margin: 20px auto;
@@ -141,19 +141,19 @@ a.reader{
   background-color: #f8f8f8;
 }
 
-.blog img{
+.frontBlog img{
   width: 100%;
   height: 100%;
 }
 
-.blog a{
+.frontBlog a{
   position:absolute;
   bottom:0;
   right:0;
   color: #777777
 }
 
-.blog a{
+.frontBlog a{
   color: #404040;
 }
 
@@ -168,7 +168,7 @@ a.reader{
   display: block;
 }
 
-.oldBlogs .blog{
+.oldBlogs .frontBlog{
   width: 400px;
   height: 300px;
   margin-left:  30px;
@@ -177,9 +177,19 @@ a.reader{
 .centerLink{
   color: #404040;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
 }
-
+#blogPage{
+  display: none;
+}
+#bioPage{
+  display: none;
+}
+.blogThumb{
+  height: 300px;
+  width: 500px;
+  outline: 1px solid #ccc;
+}
 h1{
   color: #777777;
   font-size: 50px;

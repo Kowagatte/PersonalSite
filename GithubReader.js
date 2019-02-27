@@ -8,7 +8,6 @@ for(let i =0; i < json.length; i++){
     if(json[i] !=null){
             let date = json[i]["commit"]["committer"]["date"];
             date = date.split("T");
-            console.log(json[i]);
             let string = s.innerHTML;
             string += "<strong> <a class='reader' href =" + json[i]["html_url"] + ">"
             if(json[i]["committer"] == null){
