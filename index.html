@@ -20,8 +20,8 @@
       </li>
       <li class="right">
         <strong>
-          <a onclick="ChangePage('bioPage')" class="right">
-            Bio
+          <a onclick="ChangePage('aboutPage')" class="right">
+            About Damocles
           </a>
         </strong>
       </li>
@@ -90,9 +90,17 @@
     </div>
   </div>
   <div id="blogPage">
+    <center>
+      <h1>Development Blogs</h1>
+      <div class="bar"></div>
+    </center>
   </div>
-  <div id="bioPage">
-
+  <div id="aboutPage">
+    <center>
+      <h1>About Damcoles</h1>
+      <div class ="bar"></div>
+      <p>Some Christmasy programmer guy. Website programmed by some serverrackian guy.</p>
+    </center>
   </div>
 </body>
 <footer>
@@ -111,27 +119,27 @@
     switch (newPage) {
       case 'mainPage':
         document.getElementById('blogPage').style.display = 'none';
-        document.getElementById('bioPage').style.display = 'none';
+        document.getElementById('aboutPage').style.display = 'none';
         document.getElementById('mainPage').style.display = 'block';
         break;
       case 'blogPage':
         document.getElementById('mainPage').style.display = 'none';
-        document.getElementById('bioPage').style.display = 'none';
+        document.getElementById('aboutPage').style.display = 'none';
         document.getElementById('blogPage').style.display = 'block';
         GetBlogs();
         break;
-      case 'bioPage':
+      case 'aboutPage':
         document.getElementById('mainPage').style.display = 'none';
         document.getElementById('blogPage').style.display = 'none';
-        document.getElementById('bioPage').style.display = 'block';
+        document.getElementById('aboutPage').style.display = 'block';
         break;
     }
   }
   //Fetch Json file to load all blogs from
-  function GetBlogs(){
+  function GetBlogs() {
     let root = document.getElementById('blogPage');
     //Testing
-    for(let i =0; i < 10;i++){
+    for (let i = 0; i < 10; i++) {
       let div = document.createElement('div');
       div.className = 'blogThumb';
       root.appendChild(div);

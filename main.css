@@ -38,6 +38,7 @@ header {
   font-family: 'Righteous', cursive;
   text-decoration: none;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .bar{
@@ -179,16 +180,19 @@ a.reader{
   text-decoration: none;
   font-size: 24px;
 }
+
 #blogPage{
   display: none;
 }
-#bioPage{
+#aboutPage{
   display: none;
 }
 .blogThumb{
   height: 300px;
-  width: 500px;
+  width: 50%;
   outline: 1px solid #ccc;
+  margin: 20px auto;
+  background: #f8f8f8;
 }
 h1{
   color: #777777;
