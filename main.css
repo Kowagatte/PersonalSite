@@ -14,6 +14,7 @@ footer {
   background: #f8f8f8;
   border: 1px solid #ccc;
   position: absolute;
+  font-size: 15px;
   width: 100%;
 }
 
@@ -209,4 +210,7 @@ h2{
 h2:hover{
   color: #ccc;
   cursor: pointer;
+}
+.fontAwesomeLink{
+  color: #777777;
 }

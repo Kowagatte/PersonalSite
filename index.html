@@ -4,6 +4,9 @@
 <head>
   <title>Damocles</title>
   <link href="main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 </head>
 
 <header>
@@ -98,7 +101,7 @@
   <div id="aboutPage">
     <center>
       <h1>About Damcoles</h1>
-      <div class ="bar"></div>
+      <div class="bar"></div>
       <p>Some Christmasy programmer guy. Website programmed by some serverrackian guy.</p>
     </center>
   </div>
@@ -110,12 +113,22 @@
         Kowagatte &bull; 2019 &bull; <a class="footerText" href="https://damocles.ca">damocles.ca</a>
       </strong>
     </p>
+    <p class="footerText" style="font-size:20px;">
+      <a class="fontAwesomeLink" href='https://damocles.ca/feed.xml'><i class="fas fa-rss"></i></a>
+      <a class="fontAwesomeLink" href='mailto:nnryanp@gmail.com'><i class="fas fa-envelope"></i></a>
+      <a class="fontAwesomeLink" href='https://github.com/Kowagatte'><i class="fab fa-github"></i></a>
+      <a class="fontAwesomeLink" href='https://www.patreon.com/thekowagatte'><i class="fab fa-patreon"></i></a>
+      <a class="fontAwesomeLink" href='https://discordapp.com/invite/VV95h9M'><i class="fab fa-discord"></i></a>
+      <a class="fontAwesomeLink" href='https://steamcommunity.com/id/NickKowa'><i class="fab fa-steam"></i></a>
+      <a class="fontAwesomeLink" href='https://twitter.com/nick_damocles'><i class="fab fa-twitter"></i></a>
+    </p>
   </center>
 </footer>
 <script src="GithubReader.js"></script>
 <script>
+
   function ChangePage(newPage) {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     //Possible alternative to mutliple pages? Could call other functions to fetch data or whatever.
     switch (newPage) {
       case 'mainPage':
