@@ -113,20 +113,25 @@
         Kowagatte &bull; 2019 &bull; <a class="footerText" href="https://damocles.ca">damocles.ca</a>
       </strong>
     </p>
-    <p class="footerText" style="font-size:20px;">
-      <a class="fontAwesomeLink" href='https://damocles.ca/feed.xml'><i class="fas fa-rss"></i></a>
-      <a class="fontAwesomeLink" href='mailto:nnryanp@gmail.com'><i class="fas fa-envelope"></i></a>
-      <a class="fontAwesomeLink" href='https://github.com/Kowagatte'><i class="fab fa-github"></i></a>
-      <a class="fontAwesomeLink" href='https://www.patreon.com/thekowagatte'><i class="fab fa-patreon"></i></a>
-      <a class="fontAwesomeLink" href='https://discordapp.com/invite/VV95h9M'><i class="fab fa-discord"></i></a>
-      <a class="fontAwesomeLink" href='https://steamcommunity.com/id/NickKowa'><i class="fab fa-steam"></i></a>
-      <a class="fontAwesomeLink" href='https://twitter.com/nick_damocles'><i class="fab fa-twitter"></i></a>
+    <p class="footerText" style="font-size:20px;" id = "fontAwesomeIcons">
+      
     </p>
   </center>
 </footer>
+<script src="fontAwesome.js"></script>
 <script src="GithubReader.js"></script>
 <script>
-
+  let domEle = document.getElementById('fontAwesomeIcons');
+  let faKeys = Object.keys(fontAwesome);
+  for(let i =0; i < faKeys.length;i++){
+    let clickableIcon =document.createElement('a');
+    let icon = document.createElement('i');
+    clickableIcon.className = 'fontAwesomeLink';
+    clickableIcon.href = fontAwesome[faKeys[i]];
+    icon.className = faKeys[i];
+    clickableIcon.appendChild(icon);
+    domEle.appendChild(clickableIcon);
+  }
   function ChangePage(newPage) {
     window.scrollTo(0, 0);
     //Possible alternative to mutliple pages? Could call other functions to fetch data or whatever.

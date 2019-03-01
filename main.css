@@ -213,4 +213,6 @@ h2:hover{
 }
 .fontAwesomeLink{
   color: #777777;
+  margin-left: 10px;
+  font-size: 20px;
 }
