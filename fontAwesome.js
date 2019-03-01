@@ -1,3 +1,4 @@
+//Must get class and provide link
 let fontAwesome = {
     "fas fa-rss":"https://damocles.ca/feed.xml",
     "fas fa-envelope":"mailto:nnryanp@gmail.com",
