@@ -107,3 +107,9 @@ li.footer-notes a{
 li.footer-notes a:hover{
   color: #988171;
 }
+
+#font-awesome{
+  position: absolute;
+  color: white;
+  top: 90px;
+}
