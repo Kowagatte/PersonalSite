@@ -30,15 +30,25 @@ li.navbar-objects{
 }
 
 li.navbar-objects a{
-    font-family: bitPotion;
-    font-size: 30px;
     display: block;
     color: #f1ffe0;
     text-align: center;
-    padding: 15px 32px;
+    padding: 19px 20px;
     text-decoration: none;
 }
 
 li.navbar-objects a:hover{
     background-color: #988171;
+}
+
+div.navText{
+    font-family: bitPotion;
+    font-size: 30px;
+    padding: 0 0 0 5px;
+    float: right;
+}
+
+svg.navbar-objects{
+    font-size: 15px;
+    padding: 0 3px 0 0;
 }
