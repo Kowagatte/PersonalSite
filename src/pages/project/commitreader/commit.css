@@ -1,3 +1,5 @@
-div.commit{
+p.commit{
+    text-align: center;
     white-space: pre;
+    color: white;
 }

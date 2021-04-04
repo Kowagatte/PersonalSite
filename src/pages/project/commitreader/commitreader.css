@@ -1,0 +1,15 @@
+div.git-commits{
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: pre-wrap;
+    max-height: 200px;
+    overflow-y: scroll;
+    background-color: #969696;
+    border-radius: 25px;
+    border: 2px solid #463534;
+}

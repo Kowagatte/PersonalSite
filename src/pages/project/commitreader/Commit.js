@@ -22,6 +22,7 @@ class Commit extends React.Component{
                 <br/>
                 <p> {this.props.message} </p>
                 <a href={this.props.url}>to github</a>
+                <hr/>
             </p>
         );
     }
