@@ -7,15 +7,15 @@ import {
 let icons = {
     "About Me": {
         "icon": faUserEdit,
-        "href": "/am/"
+        "href": "/am"
     },
     "Projects": {
         "icon": faFolderOpen,
-        "href": "/p/"
+        "href": "/p"
     },
     "Devlog": {
         "icon": faBook,
-        "href": "/d/"
+        "href": "/d"
     }
 }
 

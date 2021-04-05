@@ -13,15 +13,13 @@ import{
 function App(){
     return(
         <Router>
-            <div>
-                <Navbar/>
-                <Footer/>
-            </div>
+            <Navbar/>
             <Switch>
-                <Route path={'/p/'}>
+                <Route path={"/p"}>
                     <CommitReader url={'https://api.github.com/repos/Kowagatte/Damocles-Client/commits'}/>
                 </Route>
             </Switch>
+            <Footer/>
         </Router>
     );
 }

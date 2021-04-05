@@ -1,15 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Commit from './Commit';
 import './commitreader.css';
 
 const fetch = require("node-fetch")
-
-async function getCommits(url){
-    const xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send(null);
-    return JSON.parse(xmlHttp.responseText);
-}
 
 class CommitReader extends React.Component{
     constructor(props) {
@@ -29,7 +22,7 @@ class CommitReader extends React.Component{
     }
 
     render(){
-        const { url, commits } = this.state;
+        const { commits } = this.state;
         return(
                 <div className={'git-commits'}>
                     <br/>
