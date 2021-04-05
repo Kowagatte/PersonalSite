@@ -1,5 +1,14 @@
-p.commit{
+div.commit{
     text-align: center;
     white-space: pre;
     color: white;
+}
+
+a.commit-name{
+    text-decoration: none;
+    color: white;
+}
+
+img.commit-image{
+    border-radius: 10px;
 }

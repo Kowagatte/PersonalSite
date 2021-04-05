@@ -4,9 +4,6 @@ import {
     faUserEdit
 } from '@fortawesome/free-solid-svg-icons'
 
-import {
-} from '@fortawesome/free-brands-svg-icons'
-
 let icons = {
     "About Me": {
         "icon": faUserEdit,

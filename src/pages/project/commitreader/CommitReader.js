@@ -2,8 +2,7 @@ import React from "react";
 import Commit from './Commit';
 import './commitreader.css';
 
-function getCommits(){
-    let url = "https://api.github.com/repos/Kowagatte/TDClient/commits";
+function getCommits(url){
     const xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", url, false);
     xmlHttp.send(null);
@@ -11,20 +10,30 @@ function getCommits(){
 }
 
 class CommitReader extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            url: null
+        }
+    }
     render(){
-        let commits = getCommits();
+        let commits = getCommits(this.props.url);
         return(
                 <div className={'git-commits'}>
+                    <br/>
                     {
                         Object.keys(commits).map((value, index) =>{
                             return <Commit
                                 author={commits[index].commit.author.name}
+                                author_link={commits[index].author.html_url}
+                                image_url={commits[index].author.avatar_url}
                                 date={commits[index].commit.author.date}
                                 message={commits[index].commit.message}
                                 url={commits[index].html_url}
                             />
                         })
                     }
+                    <br/>
                 </div>
         );
     }

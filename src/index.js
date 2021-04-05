@@ -9,7 +9,7 @@ function App(){
     return(
         <div>
             <Navbar/>
-            <CommitReader/>
+            <CommitReader url={'https://api.github.com/repos/Kowagatte/Damocles-Client/commits'}/>
             <Footer/>
         </div>
     );
