@@ -24,22 +24,22 @@ class CommitReader extends React.Component{
     render(){
         const { commits } = this.state;
         return(
-                <div className={'git-commits'}>
-                    <br/>
-                    {
-                        Object.keys(commits || {}).map((value, index) =>{
-                            return <Commit
-                                author={commits[index].commit.author.name}
-                                author_link={commits[index].author.html_url}
-                                image_url={commits[index].author.avatar_url}
-                                date={commits[index].commit.author.date}
-                                message={commits[index].commit.message}
-                                url={commits[index].html_url}
-                            />
-                        })
-                    }
-                    <br/>
-                </div>
+            <div className={'git-commits'}>
+                <p/>
+                {
+                    Object.keys(commits || {}).map((value, index) =>{
+                        return <Commit
+                            author={commits[index].commit.author.name}
+                            author_link={commits[index].author.html_url}
+                            image_url={commits[index].author.avatar_url}
+                            date={commits[index].commit.author.date}
+                            message={commits[index].commit.message}
+                            url={commits[index].html_url}
+                        />
+                    })
+                }
+                <p/>
+            </div>
         );
     }
 }

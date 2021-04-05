@@ -1,5 +1,4 @@
 import React from "react";
-import './commit.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -40,7 +39,8 @@ class Commit extends React.Component{
             <div className={'commit'}>
                 <a className={'commit-name'} href={this.props.author_link}>
                     <img className={'commit-image'} src={this.props.image_url} style={{ maxWidth: "30px", maxHeight: "30px", paddingRight: "5px" }} alt={'avatar-image'}/>
-                    {this.props.author}</a>
+                    {this.props.author}
+                </a>
                 <br/>
                 <FontAwesomeIcon icon={faClock}/> {timeAgo(this.props.date)}
                 <br/>
