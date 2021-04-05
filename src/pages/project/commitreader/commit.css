@@ -9,6 +9,10 @@ a.commit-name{
     color: white;
 }
 
+a.commit-git{
+    text-decoration: none;
+}
+
 img.commit-image{
     border-radius: 10px;
 }

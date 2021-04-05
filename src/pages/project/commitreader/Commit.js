@@ -42,10 +42,10 @@ class Commit extends React.Component{
                     <img className={'commit-image'} src={this.props.image_url} style={{ maxWidth: "30px", maxHeight: "30px", paddingRight: "5px" }} alt={'avatar-image'}/>
                     {this.props.author}</a>
                 <br/>
-                <FontAwesomeIcon icon={faClock}/> {timeAgo(this.props.date)},
+                <FontAwesomeIcon icon={faClock}/> {timeAgo(this.props.date)}
                 <br/>
                 <p> {this.props.message} </p>
-                <a href={this.props.url}>On <FontAwesomeIcon icon={faGithub}/></a>
+                <a className={'commit-git'} href={this.props.url}>On <FontAwesomeIcon icon={faGithub}/></a>
                 <hr/>
             </div>
         );

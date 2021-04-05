@@ -1,28 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import Commit from './Commit';
 import './commitreader.css';
 
-function getCommits(url){
+const fetch = require("node-fetch")
+
+async function getCommits(url){
     const xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", url, false);
+    xmlHttp.open("GET", url, true);
     xmlHttp.send(null);
-    return JSON.parse(xmlHttp.responseText)
+    return JSON.parse(xmlHttp.responseText);
 }
 
 class CommitReader extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            url: null
+            url: "",
+            commits: []
         }
     }
+
+    componentDidMount() {
+        fetch(this.props.url)
+            .then(response => response.json())
+            .then(data => {
+                this.setState({commits: data});
+            });
+    }
+
     render(){
-        let commits = getCommits(this.props.url);
+        const { url, commits } = this.state;
         return(
                 <div className={'git-commits'}>
                     <br/>
                     {
-                        Object.keys(commits).map((value, index) =>{
+                        Object.keys(commits || {}).map((value, index) =>{
                             return <Commit
                                 author={commits[index].commit.author.name}
                                 author_link={commits[index].author.html_url}
