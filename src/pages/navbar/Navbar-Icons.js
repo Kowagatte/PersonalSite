@@ -7,15 +7,30 @@ import {
 let icons = {
     "About Me": {
         "icon": faUserEdit,
-        "href": "/am"
+        "href": "/am",
+        "items": null
     },
     "Projects": {
         "icon": faFolderOpen,
-        "href": "/p"
+        "items": {
+            "Damocles": {
+                "href": "/p/damocles/",
+                "http_url": "https://api.github.com/repos/Kowagatte/Damocles-Client/commits"
+            },
+            "TopDownShooter": {
+                "href": "/p/tds/",
+                "http_url": "https://api.github.com/repos/Kowagatte/TDClient/commits"
+            },
+            "Raymond": {
+                "href": "/p/raymond/",
+                "http_url": "https://api.github.com/repos/Kowagatte/Raymond/commits"
+            }
+        }
     },
     "Devlog": {
         "icon": faBook,
-        "href": "/d"
+        "href": "/d",
+        "items": null
     }
 }
 
