@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/damo-site/static/css/main.19c24530.chunk.css",
-    "main.js": "/damo-site/static/js/main.34a1f204.chunk.js",
-    "main.js.map": "/damo-site/static/js/main.34a1f204.chunk.js.map",
-    "runtime-main.js": "/damo-site/static/js/runtime-main.7f26e752.js",
-    "runtime-main.js.map": "/damo-site/static/js/runtime-main.7f26e752.js.map",
-    "static/js/2.3e5798fb.chunk.js": "/damo-site/static/js/2.3e5798fb.chunk.js",
-    "static/js/2.3e5798fb.chunk.js.map": "/damo-site/static/js/2.3e5798fb.chunk.js.map",
-    "index.html": "/damo-site/index.html",
-    "static/css/main.19c24530.chunk.css.map": "/damo-site/static/css/main.19c24530.chunk.css.map",
-    "static/js/2.3e5798fb.chunk.js.LICENSE.txt": "/damo-site/static/js/2.3e5798fb.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/damo-site/static/media/BitPotionExt.2ed31f82.ttf",
-    "static/media/banana.ed328241.jpg": "/damo-site/static/media/banana.ed328241.jpg",
-    "static/media/damocles-banner.40656b52.png": "/damo-site/static/media/damocles-banner.40656b52.png",
-    "static/media/logo.7f073356.svg": "/damo-site/static/media/logo.7f073356.svg"
+    "main.css": "/static/css/main.70799676.chunk.css",
+    "main.js": "/static/js/main.e28c90f8.chunk.js",
+    "main.js.map": "/static/js/main.e28c90f8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.212488dd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.212488dd.js.map",
+    "static/js/2.3e5798fb.chunk.js": "/static/js/2.3e5798fb.chunk.js",
+    "static/js/2.3e5798fb.chunk.js.map": "/static/js/2.3e5798fb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.70799676.chunk.css.map": "/static/css/main.70799676.chunk.css.map",
+    "static/js/2.3e5798fb.chunk.js.LICENSE.txt": "/static/js/2.3e5798fb.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/BitPotionExt.2ed31f82.ttf",
+    "static/media/banana.ed328241.jpg": "/static/media/banana.ed328241.jpg",
+    "static/media/damocles-banner.40656b52.png": "/static/media/damocles-banner.40656b52.png",
+    "static/media/logo.7f073356.svg": "/static/media/logo.7f073356.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7f26e752.js",
+    "static/js/runtime-main.212488dd.js",
     "static/js/2.3e5798fb.chunk.js",
-    "static/css/main.19c24530.chunk.css",
-    "static/js/main.34a1f204.chunk.js"
+    "static/css/main.70799676.chunk.css",
+    "static/js/main.e28c90f8.chunk.js"
   ]
 }
