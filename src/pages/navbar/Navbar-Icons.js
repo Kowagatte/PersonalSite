@@ -4,6 +4,8 @@ import {
     faUserEdit
 } from '@fortawesome/free-solid-svg-icons'
 
+import {projects} from "../project/common/Projects";
+
 let icons = {
     "About Me": {
         "icon": faUserEdit,
@@ -12,20 +14,7 @@ let icons = {
     },
     "Projects": {
         "icon": faFolderOpen,
-        "items": {
-            "Damocles": {
-                "href": "/p/damocles/",
-                "http_url": "https://api.github.com/repos/Kowagatte/Damocles-Client/commits"
-            },
-            "TopDownShooter": {
-                "href": "/p/tds/",
-                "http_url": "https://api.github.com/repos/Kowagatte/TDClient/commits"
-            },
-            "Raymond": {
-                "href": "/p/raymond/",
-                "http_url": "https://api.github.com/repos/Kowagatte/Raymond/commits"
-            }
-        }
+        "items": projects
     },
     "Devlog": {
         "icon": faBook,

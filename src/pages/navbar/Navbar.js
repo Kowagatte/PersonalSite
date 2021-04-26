@@ -14,7 +14,10 @@ class Navbar extends React.Component {
     render() {
         return (
             <div className="top-navbar">
-                <div className="navbar-header"><img className={'damocles-logo'} src={Logo} alt={'Damocles logo'}/><Link to={'/'}>Damocles</Link></div>
+                <div className="navbar-header">
+                    <img className={'damocles-logo'} src={Logo} alt={'Damocles logo'}/>
+                    <Link to={'/'}>Damocles</Link>
+                </div>
 
                 {/* TODO clean this shit up, very fucking ugly */}
                 {
@@ -24,15 +27,18 @@ class Navbar extends React.Component {
                                 className={'navbar dropdown-toggle btn btn-primary'}
                                 id="dropdown-basic-button"
                                 title={
-                                    <div><FontAwesomeIcon className={'navbar-objects'} icon={icons[key].icon}/><div className={'navText'}>{key}</div></div>
+                                    <div>
+                                        <FontAwesomeIcon className={'navbar-objects'} icon={icons[key].icon}/>
+                                        <div className={'navText'}>{key}</div>
+                                    </div>
                                 }>
-                                {
-                                    Object.keys(icons[key].items).map((subKey)=>{
-                                        return <LinkContainer to={icons[key].items[subKey].href}>
-                                            <Dropdown.Item>{subKey}</Dropdown.Item>
-                                        </LinkContainer>
-                                    })
-                                }
+                                    {
+                                        Object.keys(icons[key].items).map((subKey)=>{
+                                            return <LinkContainer to={icons[key].items[subKey].href}>
+                                                <Dropdown.Item>{subKey}</Dropdown.Item>
+                                            </LinkContainer>
+                                        })
+                                    }
                             </DropdownButton>
                         }else{
                             return <div className={'navbar-objects'}>
@@ -47,10 +53,7 @@ class Navbar extends React.Component {
 
                     })
                 }
-
             </div>
-
-
         );
     }
 }

@@ -24,7 +24,7 @@ class CommitReader extends React.Component{
     render(){
         const { commits } = this.state;
         return(
-            <div className={'git-commits'}>
+            <div className={'git-commits'} id={'styled-scroll'}>
                 <p/>
                 {
                     Object.keys(commits || {}).map((value, index) =>{

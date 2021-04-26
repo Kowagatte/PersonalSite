@@ -16,6 +16,11 @@ html{
   background-color: #1e1721;
 }
 
+#container{
+  box-sizing: inherit;
+  padding-top: 60px;
+}
+
 @font-face {
   font-family: bitPotion;
   src: url(res/BitPotionExt.ttf);

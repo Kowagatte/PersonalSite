@@ -2,24 +2,36 @@ import ReactDOM from "react-dom";
 import React from "react";
 import Navbar from "./pages/navbar/Navbar";
 import Footer from "./pages/footer/Footer";
-import CommitReader from "./pages/project/commitreader/CommitReader";
 import './index.css';
 import{
     BrowserRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
+import DamoclesPage from "./pages/project/damocles/DamoclesPage";
+import RaymondPage from "./pages/project/raymond/RaymondPage";
+import TopDownShooterPage from "./pages/project/topdownshooter/TopDownShooterPage";
 
 function App(){
     return(
         <Router>
             <Navbar/>
-            <Switch>
-                <Route path={"/p"}>
-                    <CommitReader url={'https://api.github.com/repos/Kowagatte/Damocles-Client/commits'}/>
-                </Route>
-            </Switch>
-            <Footer/>
+            <div id={'container'}>
+                <Switch>
+                    <Route path={'/p/damocles'}>
+                        <DamoclesPage/>
+                    </Route>
+                    <Route path={'/p/raymond'}>
+                        <RaymondPage/>
+                    </Route>
+                    <Route path={'/p/tds'}>
+                        <TopDownShooterPage/>
+                    </Route>
+                </Switch>
+            </div>
+            <Route exact path={'/'}>
+                <Footer/>
+            </Route>
         </Router>
     );
 }
