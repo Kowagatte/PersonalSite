@@ -14,7 +14,7 @@ import TopDownShooterPage from "./pages/project/topdownshooter/TopDownShooterPag
 
 function App(){
     return(
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Navbar/>
             <div id={'container'}>
                 <Switch>
