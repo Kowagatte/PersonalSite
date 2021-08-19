@@ -11,6 +11,8 @@ import{
 import DamoclesPage from "./pages/project/damocles/DamoclesPage";
 import RaymondPage from "./pages/project/raymond/RaymondPage";
 import TopDownShooterPage from "./pages/project/topdownshooter/TopDownShooterPage";
+import AboutMe from "./pages/aboutme/AboutMe";
+import Collection from "./pages/collection/Collection";
 
 function App(){
     return(
@@ -18,6 +20,12 @@ function App(){
             <Navbar/>
             <div id={'container'}>
                 <Switch>
+                    <Route path={'/am'}>
+                        <AboutMe/>
+                    </Route>
+                    <Route path={'/collection'}>
+                        <Collection/>
+                    </Route>
                     <Route path={'/p/damocles'}>
                         <DamoclesPage/>
                     </Route>
