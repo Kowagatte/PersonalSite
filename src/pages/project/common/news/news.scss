@@ -1,0 +1,21 @@
+.news{
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+news-wrapper{
+  width: 200px;
+  height: 100px;
+}
+
+.news-date{
+  position: absolute;
+  bottom: 21px;
+}
+
+.news-title{
+  position: absolute;
+  bottom: 0;
+}

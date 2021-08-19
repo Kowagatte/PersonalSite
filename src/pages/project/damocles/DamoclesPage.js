@@ -4,7 +4,7 @@ import CommitReader from "../common/commitreader/CommitReader";
 import "./damoclespage.scss"
 import banner from "../../../res/damocles-banner.png"
 import ProjectPage from "../common/ProjectPage";
-import banana from "../../../res/banana.jpg"
+import News from "../common/news/News";
 
 class DamoclesPage extends React.Component{
     render() {
@@ -16,11 +16,7 @@ class DamoclesPage extends React.Component{
                     Damocles is a (not so MMO) RPG, that exaggerates and depends on player to player interaction.
                     Quests, Character progression, Economy, World-building are all dependent
                 </div>
-                <img src={banana} alt={'banana'}/>
-                <img src={banana} alt={'banana'}/>
-                <img src={banana} alt={'banana'}/>
-                <img src={banana} alt={'banana'}/>
-                <img src={banana} alt={'banana'}/>
+                <News href={'/testing'} title={'Beavers ate the content!'} date_posted={'April. 26 / 2021'} />
             </ProjectPage>
         );
     }
