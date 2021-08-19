@@ -1,0 +1,28 @@
+.card{
+  padding: 0 10px 0 10px;
+  margin: 0 0 0 0;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  img{
+    user-select: none;
+    padding: 5px 0 5px 0;
+    height: 370px;
+  }
+}
+
+.price-total{
+  font-size: 20px;
+  color: white;
+}
+
+.card-container{
+  background-color: darkgray;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0); //Move to the middle of the screen
+  width: 80%; // Add background bars
+  min-height: calc(100vh - 60px); // Make default size of content pane the size of the browser screen.
+  height: auto; // Make the size of the content pane be the size of all its children.
+}
