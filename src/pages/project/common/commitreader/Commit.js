@@ -38,7 +38,7 @@ class Commit extends React.Component{
         return(
             <div className={'commit'}>
                 <a className={'commit-name'} href={this.props.author_link}>
-                    <img className={'commit-image'} src={this.props.image_url} style={{ maxWidth: "30px", maxHeight: "30px", paddingRight: "5px" }} alt={'avatar-image'}/>
+                    <img className={'commit-image'} src={this.props.image_url} style={{ maxWidth: "30px", maxHeight: "30px", paddingRight: "5px" }} alt={'avatar'}/>
                     {this.props.author}
                 </a>
                 <br/>
