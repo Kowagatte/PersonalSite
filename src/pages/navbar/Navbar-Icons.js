@@ -1,7 +1,8 @@
 import {
     faBook,
     faFolderOpen,
-    faUserEdit
+    faUserEdit,
+    faScroll
 } from '@fortawesome/free-solid-svg-icons'
 
 import {projects} from "../project/common/Projects";
@@ -19,6 +20,11 @@ let icons = {
     "Devlog": {
         "icon": faBook,
         "href": "/d",
+        "items": null
+    },
+    "Collection": {
+        "icon": faScroll,
+        "href": "/collection",
         "items": null
     }
 }
