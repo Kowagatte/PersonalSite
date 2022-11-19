@@ -26,9 +26,6 @@ function App(){
                     <Route path={'/collection'}>
                         <Collection/>
                     </Route>
-                    <Route path={'/p/damocles'}>
-                        <DamoclesPage/>
-                    </Route>
                     <Route path={'/p/raymond'}>
                         <RaymondPage/>
                     </Route>

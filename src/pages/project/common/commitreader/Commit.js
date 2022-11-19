@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+/*
+    This doesn't work...
+*/
 function timeAgo(time){
     let date = new Date(Date.now() - Date.parse(time))
     if(date.getFullYear() > 1970){
