@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const regionFlag = (id) =>{
     if(id === 'ja'){
         return "🇯🇵";

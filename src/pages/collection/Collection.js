@@ -4,7 +4,8 @@ import {cards} from "./Cards"
 import Card from "./Card";
 
 import fetch from "node-fetch";
-import {RateLimit} from "async-sema"
+import {RateLimit} from "async-sema";
+import noimg from "../../res/imgna.png";
 
 const limit = RateLimit(10);
 
@@ -36,9 +37,14 @@ class Collection extends React.Component{
             let card = {"name": null, "lang": null, "img": null, "price": 0.0, "foil": false}
             await limit()
             fetchFromAPI(key).then((data) => {
+                console.log(data)
                 card["lang"] = data.lang
                 card["name"] = data.name
-                card["img"] = data.image_uris.png
+                if(data.image_uris != null){
+                    card["img"] = data.image_uris.png
+                }else{
+                    card["img"] = noimg
+                }
                 card["foil"] = value
                 card["price"] = value ? data.prices.usd_foil : data.prices.usd;
 

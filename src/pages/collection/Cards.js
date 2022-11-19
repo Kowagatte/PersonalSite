@@ -22,7 +22,19 @@ let cards = {
     "cmr/141": false,
     "afr/176": false,
     "cmr/2": true,
-    "afr/78": false
+    "afr/78": false,
+    "mh2/441": false,
+    "mh2/87": false,
+    "cmr/361": false,
+    "mh2/39": false,
+    "mh2/295": true,
+    "mh2/291": false,
+    "mh2/166": false,
+    "cmr/80": false,
+    "afr/172": false,
+    "afr/20": false,
+    "stx/277": false
+
 }
 
 export {cards};
