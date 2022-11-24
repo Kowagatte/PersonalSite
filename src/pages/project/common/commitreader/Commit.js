@@ -1,26 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock} from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-/*
-    This doesn't work...
-*/
-function timeAgo(time){
-    let date = new Date(Date.now() - Date.parse(time))
-    if(date.getFullYear() > 1970){
-        return (date.getFullYear()-1970) + " years ago"
-    }else if(date.getMonth() > 0){
-        return date.getMonth() + " months ago"
-    }else if(Math.floor(date.getDate()/7) > 0){
-        return Math.floor(date.getDate()/7) + " weeks ago"
-    }else if(date.getDate > 0){
-        return date.getDate() + " days ago"
-    }else if(date.getHours() > 0){
-        return date.getHours() + " hours ago"
-    }else{
-        return date.getMinutes() + " minutes ago"
+function timeAgo(githubTime){
+    let milestones = [1000, 60000, 3600000, 86400000, 2592000000, 31104000000]
+    let messages = ["seconds ago", "minutes ago", "hours ago", "days ago", "months ago"]
+
+    let current = Date.now()
+    let elapsed = current - Date.parse(githubTime)
+
+    for(let i = 1; i< milestones.length; i++){
+        if (elapsed < milestones[i]){
+            return `${Math.floor(elapsed/milestones[i-1])} ${messages[i-1]}`
+        }
     }
+    return `${Math.floor(elapsed/31104000000)} years ago`
 }
 
 class Commit extends React.Component{
