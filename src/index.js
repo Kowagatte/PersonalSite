@@ -8,11 +8,11 @@ import{
     Switch,
     Route
 } from "react-router-dom";
-import DamoclesPage from "./pages/project/damocles/DamoclesPage";
 import RaymondPage from "./pages/project/raymond/RaymondPage";
 import TopDownShooterPage from "./pages/project/topdownshooter/TopDownShooterPage";
 import AboutMe from "./pages/aboutme/AboutMe";
 import Collection from "./pages/collection/Collection";
+import RindPage from "./pages/project/rind/RindPage";
 
 function App(){
     return(
@@ -22,6 +22,7 @@ function App(){
                 <Switch>
                     <Route path={'/am'}>
                         <AboutMe/>
+                        <Footer/>
                     </Route>
                     <Route path={'/collection'}>
                         <Collection/>
@@ -31,6 +32,9 @@ function App(){
                     </Route>
                     <Route path={'/p/tds'}>
                         <TopDownShooterPage/>
+                    </Route>
+                    <Route path={'/p/rind'}>
+                        <RindPage/>
                     </Route>
                 </Switch>
             </div>

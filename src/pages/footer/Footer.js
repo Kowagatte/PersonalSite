@@ -36,7 +36,7 @@ class Footer extends React.Component{
                 <ul className={'footer-notes'}>
                     <li id={'id-tag'} className={'footer-notes'}>Nicholas N Ryan</li>
                     <li className={'footer-notes'}>•</li>
-                    <li id={'id-tag'} className={'footer-notes'}>2019-2021</li>
+                    <li id={'id-tag'} className={'footer-notes'}>2019-2022</li>
                     <li className={'footer-notes'}>•</li>
                     <li className={'footer-notes'}><a href={'https://damocles.ca'}>damocles.ca</a></li>
                 </ul>

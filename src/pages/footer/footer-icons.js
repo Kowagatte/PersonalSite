@@ -6,14 +6,13 @@ import {
 import {
     faGithub,
     faSteam,
-    faTwitter,
     faDiscord
 } from '@fortawesome/free-brands-svg-icons'
 
 let icons = {
     "mail": {
         "icon": faEnvelope,
-        "href": "mailto:admin@damocles.com"
+        "href": "mailto:nnryanp@gmail.com"
     },
     "github": {
         "icon": faGithub,
@@ -21,15 +20,11 @@ let icons = {
     },
     "discord": {
         "icon": faDiscord,
-        "href": "https://discordapp.com/invite/VV95h9M"
+        "href": "https://discordapp.com/users/211102039143481344"
     },
     "steam": {
         "icon": faSteam,
         "href": "https://steamcommunity.com/id/NickKowa"
-    },
-    "twitter": {
-        "icon": faTwitter,
-        "href": "https://twitter.com/nick_damocles"
     },
     "sponsor": {
         "icon": faDollarSign,
