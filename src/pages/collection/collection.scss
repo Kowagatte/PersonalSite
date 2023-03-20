@@ -1,10 +1,12 @@
+@use "../../color-palette.scss" as p;
+
 .card{
   max-width: 265px;
   border-radius: 20px;
   padding: 0 10px 0 10px;
   margin: 6px 6px 6px 6px;
-  background-color: #463534;
-  color: white;
+  background-color: p.$CardBackground;
+  color: p.$OnSurface;
   display: inline-block;
   text-align: center;
   img{
@@ -27,10 +29,10 @@
 
 .price-total{
   display: inline;
-  color: white;
+  color: p.$OnBackground;
   h1{
     margin: 0 35% 10px 35%;
-    border: 3px solid #463534 ;
+    border: 3px solid p.$CardBackground ;
     border-radius: 10px;
   }
 }

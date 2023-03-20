@@ -2,7 +2,7 @@ import ReactDOM from "react-dom";
 import React from "react";
 import Navbar from "./pages/navbar/Navbar";
 import Footer from "./pages/footer/Footer";
-import './index.css';
+import './index.scss';
 import{
     BrowserRouter as Router,
     Switch,
@@ -13,6 +13,7 @@ import TopDownShooterPage from "./pages/project/topdownshooter/TopDownShooterPag
 import AboutMe from "./pages/aboutme/AboutMe";
 import Collection from "./pages/collection/Collection";
 import RindPage from "./pages/project/rind/RindPage";
+import BlogContainer from "./pages/blog/blogContainer";
 
 function App(){
     return(
@@ -36,9 +37,13 @@ function App(){
                     <Route path={'/p/rind'}>
                         <RindPage/>
                     </Route>
+                    <Route path={'/d'}>
+                        <BlogContainer/>
+                    </Route>
                 </Switch>
             </div>
             <Route exact path={'/'}>
+                <BlogContainer/>
                 <Footer/>
             </Route>
         </Router>

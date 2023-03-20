@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './footer-icons';
-import './footer.css'
+import './footer.scss'
 
 class Icon extends React.Component{
     constructor(props) {

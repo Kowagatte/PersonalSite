@@ -1,11 +1,12 @@
+@use "../../color-palette.scss" as p;
+
 div.footer{
     position: fixed;
     text-align: center;
     line-height: 40px;
     bottom: 0;
     width: 100%;
-    color: #f1ffe0;
-    background-color: #463534;
+    background-color: p.$Surface;
 }
 
 ul.footer-notes{
@@ -27,13 +28,13 @@ li.footer-icons{
 #id-tag{
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
-    color: #f1ffe0;
+    color: p.$OnSurface;
 }
 
 li.footer-notes a{
     font-family: 'Anton', sans-serif;
     font-size: 14px;
-    color: #f1ffe0;
+    color: p.$OnSurface;
     text-decoration: none;
 }
 
