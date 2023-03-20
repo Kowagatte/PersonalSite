@@ -9,7 +9,7 @@ const regionFlag = (id) =>{
 }
 
 const foilFlag = (id) =>{
-    return id ? "*" : "";
+    return id ? "Foil" : "";
 }
 
 class Card extends React.Component{
@@ -28,7 +28,8 @@ class Card extends React.Component{
         return(
             <figure className={'card'}>
                 <figcaption className={'caption'}>
-                    {this.props.name}「{regionFlag(this.props.lang)}」{foilFlag(this.props.foil)}
+                    {this.props.name}「{regionFlag(this.props.lang)}」
+                    {this.props.foil && (<p className={'foil-tag'}>{foilFlag(this.props.foil)}</p>)}
                     <br/>
                     ${this.props.price} USD
                 </figcaption>
