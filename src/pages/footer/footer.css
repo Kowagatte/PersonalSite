@@ -1,5 +1,4 @@
 div.footer{
-    display: inline;
     position: fixed;
     text-align: center;
     line-height: 40px;
@@ -10,11 +9,9 @@ div.footer{
 }
 
 ul.footer-notes{
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: inline;
 }
 
 li.footer-notes{
@@ -22,15 +19,20 @@ li.footer-notes{
     display: inline;
 }
 
+li.footer-icons{
+    padding: 0 10px 0 10px;
+    display: inline;
+}
+
 #id-tag{
-    font-family: bitPotion;
-    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
     color: #f1ffe0;
 }
 
 li.footer-notes a{
-    font-family: bitPotion;
-    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    font-size: 14px;
     color: #f1ffe0;
     text-decoration: none;
 }
@@ -44,8 +46,4 @@ a.icon{
     color: white;
     padding: 0 8px 0 8px;
     text-decoration: none;
-}
-
-div.fontAwesomeIcons{
-    height: 32px;
 }
