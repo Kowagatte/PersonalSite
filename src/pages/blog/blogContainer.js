@@ -1,13 +1,11 @@
 import React from "react";
-import './blogcontainer.css';
+import './blogcontainer.scss';
 
 class BlogContainer extends React.Component{
 
     render(){
         return(
-            <div className={'blog-container'}>
-                Blog Background
-            </div>
+            <div className={'blog-container'} />
         );
     }
 }
