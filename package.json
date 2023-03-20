@@ -16,7 +16,6 @@
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-router-bootstrap": "^0.25.0",
-    "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -25,7 +24,8 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "audit": "npm audit --omit=dev"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +48,7 @@
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
     "sass": "^1.56.1"
   }
 }

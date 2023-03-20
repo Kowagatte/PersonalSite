@@ -8,14 +8,14 @@ import {
     Dropdown,
     DropdownButton
 } from "react-bootstrap";
-import Logo from '../../res/logo.svg'
+import Icon from './Icon';
 
 class Navbar extends React.Component {
     render() {
         return (
             <div className="top-navbar">
                 <div className="navbar-header">
-                    <img className={'damocles-logo'} src={Logo} alt={'Damocles logo'}/>
+                    <Icon className={'damocles-logo'} />
                     <Link to={'/'}>Damocles</Link>
                 </div>
 
