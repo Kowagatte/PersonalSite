@@ -1,8 +1,8 @@
 .card{
   max-width: 265px;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 0 10px 0 10px;
-  margin: 6px 3px 0 3px;
+  margin: 6px 6px 6px 6px;
   background-color: #463534;
   color: white;
   display: inline-block;
@@ -31,7 +31,6 @@
 .card-container{
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: darkgray;
   position: relative;
   text-align: center;
   left: 50%;
