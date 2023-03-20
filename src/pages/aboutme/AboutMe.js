@@ -10,11 +10,10 @@ class AboutMe extends React.Component{
         return(
             <div className={'about-me'}>
                 <p>
-                    Hello! My name is Nicholas Ryan.<br/><br/>
-                    I am currently pursuing a degree in Computer Science at the University Of Saskatchewan.<br/> <br/>
-                    I tinker a lot with Hacking and CyberSecurity, I currently work as an Intern Security Analyst at Cameco Corporation. My current career goals is to obtain CISSP and OSCP certification. Gain experience in Video-Game Hacking, Bug Hunting and Reverse Engineering. And, obtain a job in Video Game Security.<br/>
-                    <br/>
-                    My hobbies are; Making and playing Video-Games, Cooking, Collecting cards, Learning Japanese.
+                    Who am I?<br/>
+                    My name is Nicholas Ryan<br/><br/>
+                    I'm a Usask alumnus<br/>
+                    And I tinker with computers
                 </p>
                 <img alt={"Sleeping"} src={firstImage}/>
                 <img alt={"In Las Vegas"} src={secondImage}/>
