@@ -2,8 +2,10 @@
   "name": "damocles",
   "version": "0.1.0",
   "homepage": "https://damocles.ca",
+  "proxy": "http://api.damocles.ca:8080/",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.11.9",
