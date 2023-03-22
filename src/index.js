@@ -13,7 +13,7 @@ import TopDownShooterPage from "./pages/project/topdownshooter/TopDownShooterPag
 import AboutMe from "./pages/aboutme/AboutMe";
 import Collection from "./pages/collection/Collection";
 import RindPage from "./pages/project/rind/RindPage";
-import BlogContainer from "./pages/blog/blogContainer";
+import BlogPage from "./pages/blog/BlogPage";
 
 function App(){
     return(
@@ -38,12 +38,12 @@ function App(){
                         <RindPage/>
                     </Route>
                     <Route path={'/d'}>
-                        <BlogContainer/>
+                        <BlogPage/>
                     </Route>
                 </Switch>
             </div>
             <Route exact path={'/'}>
-                <BlogContainer/>
+                <BlogPage/>
                 <Footer/>
             </Route>
         </Router>
