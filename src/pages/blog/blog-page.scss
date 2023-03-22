@@ -1,7 +1,7 @@
 @use "../../color-palette.scss" as p;
 
 div.blog-page{
-    background-color: gray;
+    //background-color: gray;
     position: relative;
     text-align: center;
     left: 50%;
@@ -38,5 +38,45 @@ div.blog-page{
 }
 
 div.blog{
-    background-color: white;
+
+    a.blog-link, a.blog-link:visited{
+
+        .blog-date{
+            padding: 0.5% 0.25% 0.5% 0.25%;
+            width: 200px;
+            background-color: p.$Surface;
+            color: p.$OnSurface;
+            float: left;
+        }
+        .blog-category{
+            margin-left: 1%;
+            float: left;
+            padding: 0.25%;
+            width: 100px;
+            background-color: p.$Error;
+        }
+        .blog-title{
+            font-family: 'Anton', sans-serif;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .blog-desc{
+            color: p.$OnBackgroundSecondary
+        }
+
+        text-decoration: none;
+        color: p.$OnBackground;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+
+    padding: 1% 0 1% 0;
+    margin: 2% 0 0 0;
+    color: p.$OnBackground;
+    max-width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0); //Move to the middle of the screen
+    position: relative;
+    text-align: center;
 }

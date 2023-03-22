@@ -10,10 +10,12 @@ function toNiceString(datetime){
 function Blog(props){
     return(
         <div className={'blog'}>
-            <div className={'blog-title'}>{props.title}</div>
-            <div className={'blog-category'}>{props.category}</div>
-            <div className={'blog-date'}>{toNiceString(props.date)}</div>
-            <p className={'blog-desc'}>{props.desc}</p>
+            <a draggable="false" className={'blog-link'} href={'/b/test'}>
+                <div className={'blog-date'}>{toNiceString(props.date)}</div>
+                <div className={'blog-category'}>{props.category}</div>
+                <p className={'blog-title'}>{props.title}</p>
+                <p className={'blog-desc'}>{props.desc}</p>
+            </a>
         </div>
     );
 }
