@@ -13,6 +13,7 @@ import TopDownShooterPage from "./pages/project/topdownshooter/TopDownShooterPag
 import AboutMe from "./pages/aboutme/AboutMe";
 import Collection from "./pages/collection/Collection";
 import RindPage from "./pages/project/rind/RindPage";
+import Homepage from "./pages/blog/Homepage";
 import BlogPage from "./pages/blog/BlogPage";
 
 function App(){
@@ -37,13 +38,11 @@ function App(){
                     <Route path={'/p/rind'}>
                         <RindPage/>
                     </Route>
-                    <Route path={'/d'}>
-                        <BlogPage/>
-                    </Route>
+                    <Route path={'/blog/:id'} component={BlogPage}/>
                 </Switch>
             </div>
             <Route exact path={'/'}>
-                <BlogPage/>
+                <Homepage/>
                 <Footer/>
             </Route>
         </Router>

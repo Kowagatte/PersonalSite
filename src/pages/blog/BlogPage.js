@@ -1,20 +1,32 @@
 import React, {useState, useEffect} from "react";
-import ReactMarkdown from 'marked-react'
-import { useParams } from "react-router-dom";
+import Markdown from 'marked-react'
+import './blog-page.scss';
 
 function BlogPage(props){
-    const {param} = useParams()
+    const [page, setPage] = useState(null)
 
-    console.log(param)
+    useEffect(()=>{
+        fetch(`http://api.damocles.ca:8080/damocles/blog/${props.match.params.id}`).then(response=>{
+            return response.text()
+        })
+        .then(text =>{
+            setPage(text)
+        }).catch(err=>{
+            console.log(err)
+        })
+    }, [])
 
-    //const page = import(`../../res/pages${props.id}.md`)
-
-    return(
-        <div>
-            {param}
-        </div>
-        //<ReactMarkdown source={page}></ReactMarkdown>
-    );
+    if(page != null){
+        return(
+            <div className={'blog-page'}>
+                <Markdown>
+                    {page}
+                </Markdown>
+            </div>
+        )
+    }else{
+        return(<div>No page found</div>)
+    }
 
 }
 

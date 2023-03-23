@@ -1,0 +1,6 @@
+@use '../../color-palette.scss' as p;
+
+.blog-page{
+    padding-left: 1%;
+    color: p.$OnBackground;
+}
