@@ -4,12 +4,12 @@
 
   button{
     float: right;
-    padding: 19px 15px 9px 15px;
+    padding: 19px 15px 19px 15px;
   }
 
   button.dropdown-toggle {
     white-space: nowrap;
-    color: #f1ffe0;
+    color: p.$OnSurface;
   }
 
   .btn {
