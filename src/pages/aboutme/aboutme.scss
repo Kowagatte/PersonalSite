@@ -5,6 +5,15 @@ div.about-me{
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
 
+  .background-img{
+    height: calc(100vh - 60px);
+    background-image: url('../../res/aboutme/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(2.5px); /* Safari 6.0 - 9.0 */
+    filter: blur(2.5px);
+  }
+
   .description{
     border-radius: 20px;
     padding: 0 2% 1% 2%;
