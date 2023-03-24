@@ -12,7 +12,7 @@ import {
 let icons = {
     "mail": {
         "icon": faEnvelope,
-        "href": "mailto:nnryanp@gmail.com"
+        "href": "mailto:admin@damocles.ca"
     },
     "github": {
         "icon": faGithub,
