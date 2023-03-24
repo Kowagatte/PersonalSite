@@ -9,15 +9,19 @@ class AboutMe extends React.Component{
     render() {
         return(
             <div className={'about-me'}>
-                <p>
-                    Who am I?<br/>
-                    My name is Nicholas Ryan<br/><br/>
-                    I'm a Usask alumnus<br/>
-                    And I tinker with computers
-                </p>
-                <img alt={"Sleeping"} src={firstImage}/>
-                <img alt={"In Las Vegas"} src={secondImage}/>
-                <img alt={"Riding Stone Lizard"} src={thirdImage}/>
+                <div className={'description'}>
+                    <h1>
+                        Who am I?
+                    </h1>
+                    <p>
+                        My name is Nicholas Ryan<br/><br/>
+                        I'm a Usask alumnus<br/>
+                        And I tinker with computers
+                    </p>
+                </div>
+                <img className={'img1'} alt={"Sleeping"} src={firstImage}/>
+                <img className={'img2'} alt={"In Las Vegas"} src={secondImage}/>
+                <img className={'img3'} alt={"Riding Stone Lizard"} src={thirdImage}/>
 
             </div>
             

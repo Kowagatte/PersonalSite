@@ -1,15 +1,43 @@
-.about-me{
-  background-color: darkgray;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  height: 60%;
+@use '../../color-palette.scss' as p;
+
+div.about-me{
+  color: p.$OnBackground;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+
+  .description{
+    border-radius: 20px;
+    padding: 0 2% 1% 2%;
+    background-color: p.$Surface;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+  }
+
+  .img1{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    height: 400px;
+  }
+
+  .img2{
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    height: 400px;
+  }
+
+  .img3{
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    height: 400px;
+  }
 
   img{
     border-radius: 20px;
-    max-height: 80%;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
