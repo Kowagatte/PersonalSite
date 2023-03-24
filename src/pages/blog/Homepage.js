@@ -27,7 +27,7 @@ function Homepage(){
   const [category, setCategory] = useState("all")
 
     useEffect(()=>{
-        const url = `http://api.damocles.ca:8080/damocles/blogs/`;
+        const url = `https://api.damocles.ca:8080/damocles/blogs/`;
         return fetch(url)
         .then((response) => response.json())
         .then(responseJson => {

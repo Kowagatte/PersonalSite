@@ -1,5 +1,4 @@
 import {
-    faBook,
     faFolderOpen,
     faUserEdit,
     faScroll
@@ -17,11 +16,6 @@ let icons = {
         "icon": faFolderOpen,
         "items": projects
     },
-    // "Devlog": {
-    //     "icon": faBook,
-    //     "href": "/d",
-    //     "items": null
-    // },
     "Collection": {
         "icon": faScroll,
         "href": "/collection",
