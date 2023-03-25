@@ -57,7 +57,7 @@ function Homepage(){
             <button active={"false"} value="blog" className="category" onClick={handleClick}>Blog</button>
           </div>
           {
-            posts.map((obj)=>{
+            posts.filter((post)=> ((post.category === category) || category === 'all')).map((obj)=>{
               return(
                 <Blog id={obj.id} title={obj.title} date={obj.createdon} category={obj.category} desc={obj.description}/>
               )
