@@ -6,7 +6,7 @@ function BlogPage(props){
     const [page, setPage] = useState(null)
 
     useEffect(()=>{
-        fetch(`https://api.damocles.ca:8080/damocles/blog/${props.match.params.id}`).then(response=>{
+        fetch(`https://api.damocles.ca/damocles/blog/${props.match.params.id}`).then(response=>{
             return response.text()
         })
         .then(text =>{
