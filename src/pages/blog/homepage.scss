@@ -71,7 +71,9 @@ div.blog{
         -webkit-user-drag: none;
     }
 
-    padding: 1% 0 1% 0;
+    padding: 1%;
+    background-color: p.$Blog;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
     margin: 2% 0 0 0;
     color: p.$OnBackground;
     max-width: 50%;
