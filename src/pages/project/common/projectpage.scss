@@ -1,7 +1,9 @@
+@use '../../../color-palette.scss' as p;
+
 .project-page{
   text-align: center;
-  background-color: darkgray;
   position: relative;
+  color: p.$OnBackground;
   left: 50%;
   transform: translate(-50%, 0); //Move to the middle of the screen
   width: 80%; // Add background bars

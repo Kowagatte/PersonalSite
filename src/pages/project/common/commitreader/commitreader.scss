@@ -1,3 +1,5 @@
+@use '../../../../color-palette.scss' as p;
+
 div.git-commits{
     position: absolute;
     bottom: 0;
@@ -32,7 +34,16 @@ div.git-commits{
     background-color: #555;
 }
 
+div.commit-title{
+    padding-top: 1%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: p.$Secondary;
+    font-size: 28px;
+}
+
 div.commit{
+    margin: 1% 2% 1% 2%;
     text-align: center;
     white-space: pre;
     color: white;
@@ -45,11 +56,11 @@ a.commit-name{
 
 a.commit-git{
     text-decoration: none;
-    color: #212529;
+    color: #a4aab1;
 }
 
 a.commit-git:visited{
-    color: #212529;
+    color: #5a6168;
 }
 
 img.commit-image{

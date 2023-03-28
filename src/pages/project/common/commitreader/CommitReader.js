@@ -1,47 +1,40 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Commit from './Commit';
-import './commitreader.css';
+import './commitreader.scss';
 
-const fetch = require("node-fetch")
+function CommitReader(props){
+    const [url, setURL] = useState(props.url)
+    const [commits, setCommits] = useState([])
 
-class CommitReader extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            url: "",
-            commits: []
-        }
-    }
+    useEffect(()=>{
+        fetch(props.url)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            setCommits(data)
+        });
+    }, [])
 
-    componentDidMount() {
-        fetch(this.props.url)
-            .then(response => response.json())
-            .then(data => {
-                this.setState({commits: data});
-            });
-    }
-
-    render(){
-        const { commits } = this.state;
-        return(
-            <div className={'git-commits'} id={'styled-scroll'}>
-                <p/>
-                {
-                    Object.keys(commits || {}).map((value, index) =>{
-                        return <Commit
-                            author={commits[index].commit.author.name}
-                            author_link={commits[index].author.html_url}
-                            image_url={commits[index].author.avatar_url}
-                            date={commits[index].commit.author.date}
-                            message={commits[index].commit.message}
-                            url={commits[index].html_url}
-                        />
-                    })
-                }
-                <p/>
+    return(
+        <div className={props.class} id={'styled-scroll'}>
+            <div className={'commit-title'}>
+                {props.title} Github Commits
+                <hr/>
             </div>
-        );
-    }
+            {
+                Object.keys(commits || {}).map((value, index) =>{
+                    return <Commit
+                        author={commits[index].commit.author.name}
+                        author_link={commits[index].author.html_url}
+                        image_url={commits[index].author.avatar_url}
+                        date={commits[index].commit.author.date}
+                        message={commits[index].commit.message}
+                        url={commits[index].html_url}
+                    />
+                })
+            }
+        </div>
+    );
 }
 
 export default CommitReader;

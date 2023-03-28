@@ -1,6 +1,29 @@
 @use '../../../color-palette.scss' as p;
 
 
+.commit-container{
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+
+    .tds-commits{
+        background-color: p.$Surface;
+        max-width: 50%;
+        float: right;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        white-space: pre-wrap;
+        max-height: 200px;
+        border-radius: 15px;
+        border: 1px solid p.$Secondary;
+        word-wrap: break-word;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+
+
 .download-container{
 
     button.download{
@@ -44,8 +67,8 @@
     .banner-title{
         position: absolute;
         left: 50%;
-        top: 20%;
-        transform: translate(-50%, -50%);
+        top: 115px;
+        transform: translate(-50%);
         font-family: 'Anton', sans-serif;
         color: p.$Primary;
         -webkit-text-stroke: 4px #000000;
