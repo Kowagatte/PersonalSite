@@ -64,16 +64,18 @@
 
 
 .banner-container{
+    display: flex;
     .banner-title{
-        position: absolute;
-        left: 50%;
-        top: 115px;
-        transform: translate(-50%);
+        box-sizing: border-box; /* required */
+        width: 100%; /* required */
+        flex: none; /* required */
+        margin-top: 7%;
+        margin-left: -100%; /* required */
+
         font-family: 'Anton', sans-serif;
         color: p.$Primary;
         -webkit-text-stroke: 4px #000000;
         font-size: 80px;
-        margin-top: 0px;
 
         user-select: none; /* supported by Chrome and Opera */
         -webkit-user-select: none; /* Safari */
@@ -83,6 +85,9 @@
     }
 
     .banner{
+        box-sizing: border-box; /* required */
+        width: 100%; /* required */
+        flex: none; /* required */
         z-index: -1;
         top: 0px;
         left: inherit;
