@@ -12,7 +12,6 @@ import RaymondPage from "./pages/project/raymond/RaymondPage";
 import TopDownShooterPage from "./pages/project/topdownshooter/TopDownShooterPage";
 import AboutMe from "./pages/aboutme/AboutMe";
 import Collection from "./pages/collection/Collection";
-import RindPage from "./pages/project/rind/RindPage";
 import Homepage from "./pages/blog/Homepage";
 import BlogPage from "./pages/blog/BlogPage";
 
@@ -34,9 +33,6 @@ function App(){
                     </Route>
                     <Route path={'/p/tds'}>
                         <TopDownShooterPage/>
-                    </Route>
-                    <Route path={'/p/rind'}>
-                        <RindPage/>
                     </Route>
                     <Route path={'/blog/:id'} component={BlogPage}/>
                 </Switch>
