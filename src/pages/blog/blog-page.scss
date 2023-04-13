@@ -3,4 +3,21 @@
 .blog-page{
     padding-left: 1%;
     color: p.$OnBackground;
+    width: 60%;
+    padding-bottom: 2.5%;
+
+    img{
+        max-width: 600px;
+    }
+
+    h1, h2, h3{
+        text-decoration: underline;
+        font-weight: 800;
+    }
+
+    pre{
+        max-width: 60%;
+        background-color: p.$Surface;
+        padding: 1%;
+    }
 }

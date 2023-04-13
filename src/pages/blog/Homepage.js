@@ -31,7 +31,7 @@ function Homepage(){
         return fetch(url)
         .then((response) => response.json())
         .then(responseJson => {
-          setPosts(responseJson)
+          setPosts(responseJson.sort((a, b)=> new Date(b.createdon) - new Date(a.createdon)))
         })
         .catch(setPosts([]));
     }, []);
